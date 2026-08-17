@@ -1,0 +1,28 @@
+{
+  "name": "learn-react",
+  "version": "1.0.0",
+  "description": "a kitchen sink repo to practice and follow namaste-react course",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tharun1718333/learn-react.git"
+  },
+  "keywords": [
+    "Kohli"
+  ],
+  "author": "Tharun Reddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tharun1718333/learn-react/issues"
+  },
+  "homepage": "https://github.com/Tharun1718333/learn-react#readme",
+  "dependencies": {
+    "parcel": "^2.16.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}

@@ -1,3 +1,5 @@
-#Kohli_Heading {
-  color: red;
+.parent {
+  display: flex;
+  justify-content: space-between; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
 }

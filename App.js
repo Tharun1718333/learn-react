@@ -1,21 +1,32 @@
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("h1", {}, "1"),
-  React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", {}, "1.1"),
-    React.createElement("div", { id: "child1.1" }, [
-      React.createElement("h1", {}, "1.1.1"),
-      React.createElement("h1", {}, "1.1.2"),
-    ]),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "1.2"),
-    React.createElement("div", { id: "child1.2" }, [
-      React.createElement("h1", {}, "1.2.1"),
-      React.createElement("h1", {}, "1.2.2"),
-    ]),
-  ]),
-]);
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-console.log(parent);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+const headerByCreateElement = React.createElement(
+  "div",
+  { className: "title" },
+  [
+    React.createElement("h1", {}, "Virat Kohli"),
+    React.createElement("h2", {}, "Abraham Bejaman devillers"),
+    React.createElement("h3", {}, "Rajath patidhar"),
+  ],
+);
+
+const HeaderByJSX = () => (
+  <div className="parent">
+    <img
+      src="https://www.w3schools.com/tags/img_girl.jpg"
+      width="100"
+      height="100"
+    ></img>
+    <input className="parent"></input>
+    <img
+      src="https://www.w3schools.com/tags/img_girl.jpg"
+      width="100"
+      height="100"
+    ></img>
+  </div>
+);
+
+root.render(<HeaderByJSX />);
